@@ -1,0 +1,6 @@
+Hi !
+
+A fost detectata o eroare in procesul de Onboarding : {0}.
+
+
+This mail was seny by a robot! 

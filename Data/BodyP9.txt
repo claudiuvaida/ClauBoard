@@ -1,0 +1,12 @@
+<p>Buna ziua,</p>
+<p>
+  <br>
+</p>
+<p>&nbsp;</p>
+<p>Va rog sa ma ajutati cu fise si pentru:&nbsp;</p>
+<p><span style="white-space:pre;">&nbsp; &nbsp;&nbsp;</span></p>
+<p>{0} – data nasterii {1}, Bucuresti, functia {2}, data angajare {3}, sediul din {4}, Mindit Services</p>
+<p>
+  <br>
+</p>
+<p>Multumesc</p>

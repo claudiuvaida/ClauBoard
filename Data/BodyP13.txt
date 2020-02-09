@@ -1,0 +1,23 @@
+<p>&nbsp;Buna {0}, &nbsp;</p>
+
+<p>Credentialele tale pentru Office si Outlook sunt:&nbsp;</p>
+
+<p>Email: {1}</p>
+
+<p>Username: {1}&nbsp;</p>
+
+<p>Password: {2} &nbsp;</p>
+
+<p>Credentialele pentru laptop:&nbsp;</p>
+
+<p>Username: {1}&nbsp;</p>
+
+<p>Password: {3}&nbsp;</p>
+
+<p>Parolele se pot modifica de la prima logare.&nbsp;</p>
+
+<p>Daca mai ai nevoie de alte informatii imi poti scrie.&nbsp;</p>
+
+<p>Bine ai venit la noi! 😊 &nbsp;</p>
+
+ 

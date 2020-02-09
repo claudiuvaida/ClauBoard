@@ -1,0 +1,6 @@
+<p>Dear {0},&nbsp;</p>
+
+<p>Pentru a avea parte de o calatorie cat mai linistita si frumoasa in Mindit, mai ales acum la inceput de drum, {1} va fi buddy-ul tau, si iti va oferi sprijinul necesar. O sa iti fie alaturi mereu si {2}, fiind team managerul tau. &nbsp;</p>
+
+<p>Te incurajez sa fii cat mai curios/curioasa, sa pui intrebari si sa afli cine sunt persoanele cu care lucrezi sau cu care vei lucra. In Mindit promovam o cultura a feedback-ului, astfel ca te rog sa nu astepti sa ti se ceara/ofere feedback – proactivitatea ajuta intotdeauna. &nbsp;</p>
+

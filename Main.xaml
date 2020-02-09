@@ -1,0 +1,326 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main2" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="653.6,736.8" sap2010:WorkflowViewState.IdRef="Main2_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="21">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="19">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <StateMachine InitialState="{x:Reference __ReferenceID2}" DisplayName="Main" sap:VirtualizedContainerService.HintSize="633.6,636.8" sap2010:WorkflowViewState.IdRef="StateMachine_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
+        <x:Double x:Key="StateContainerWidth">600</x:Double>
+        <x:Double x:Key="StateContainerHeight">600</x:Double>
+        <av:PointCollection x:Key="ConnectorLocation">300,77.7 300,107.7 300.24,107.7 300.24,129.2</av:PointCollection>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <State x:Name="__ReferenceID2" sap2010:Annotation.AnnotationText="Right here we will extract the necessary information in order to start the process" DisplayName="Get Status from Excel" sap:VirtualizedContainerService.HintSize="196,121.6" sap2010:WorkflowViewState.IdRef="State_3">
+      <State.Entry>
+        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="436.8,319.2" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+          <TryCatch.Try>
+            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke 1.ExtractAndSend workflow" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="RobotSteps\1.ExtractAndSend.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <OutArgument x:TypeArguments="x:String" x:Key="Scutit_Out">[Scutit]</OutArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="Buletin_Out">[Buletin]</OutArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="Name_Out">[Name]</OutArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="HireDate_Out">[HireDate]</OutArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="Position_Out">[Position]</OutArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="NetSalary_Out">[NetSalary]</OutArgument>
+                <OutArgument x:TypeArguments="x:Int32" x:Key="WorkHours_Out">[WorkHours]</OutArgument>
+                <OutArgument x:TypeArguments="x:Int32" x:Key="VacationDays_Out">[VacationDays]</OutArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="Location_Out">[Location]</OutArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="EmployeeMail_Out">[EmployeeMail]</OutArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="HolidaysHR_User_Out">[HolidaysHR_User]</OutArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="HolidaysHR_Password_Out">[HolidaysHR_Password]</OutArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="BirthDate_Out">[BirthDate]</OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="Manager_Out">[Manager]</OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="Admin_Out">[Admin]</OutArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="ManagerName_Out">[ManagerName]</OutArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="UserTeams_Out">[UserTeams]</OutArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="Gender_Out">[Gender]</OutArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="CNP_Out">[PNC]</OutArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="PhoneNumber_Out">[PhoneNumber]</OutArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="BuddyName_Out">[BuddyName]</OutArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="PasswordMail_Out">[PasswordMail]</OutArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="PasswordLaptop_Out">[PasswordLaptop]</OutArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+          </TryCatch.Try>
+          <TryCatch.Catches>
+            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="403.2,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ActivityAction x:TypeArguments="s:Exception">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                </ActivityAction.Argument>
+              </ActivityAction>
+            </Catch>
+          </TryCatch.Catches>
+        </TryCatch>
+      </State.Entry>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">192,129.2</av:Point>
+          <av:Size x:Key="ShapeSize">196,121.6</av:Size>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          <x:Double x:Key="StateContainerWidth">162.39999999999992</x:Double>
+          <x:Double x:Key="StateContainerHeight">25</x:Double>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <State.Transitions>
+        <Transition DisplayName="T1" sap2010:WorkflowViewState.IdRef="Transition_6">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <av:PointCollection x:Key="ConnectorLocation">280.2,250.8 280.2,280.8 280,280.8 280,327.2</av:PointCollection>
+              <x:Int32 x:Key="SrcConnectionPointIndex">35</x:Int32>
+              <x:Int32 x:Key="DestConnectionPointIndex">38</x:Int32>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Transition.To>
+            <State x:Name="__ReferenceID0" sap2010:Annotation.AnnotationText="We will create a new user in the Holidays Platform" DisplayName="Create User In Holidays" sap:VirtualizedContainerService.HintSize="239.2,105.6" sap2010:WorkflowViewState.IdRef="State_2">
+              <State.Entry>
+                <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="436.8,319.2" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                  <TryCatch.Try>
+                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke 3.CreateUserHolidays workflow" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="RobotSteps\3.CreateUserHolidays.xaml">
+                      <ui:InvokeWorkflowFile.Arguments>
+                        <InArgument x:TypeArguments="x:String" x:Key="Name_In">[Name]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="BirthDate_In">[BirthDate]</InArgument>
+                        <InArgument x:TypeArguments="x:Int32" x:Key="VacationDays_In">[VacationDays]</InArgument>
+                        <InArgument x:TypeArguments="x:Boolean" x:Key="Manager_In">[Manager]</InArgument>
+                        <InArgument x:TypeArguments="x:Boolean" x:Key="Admin_In">[Admin]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="ManagerName_In">[ManagerName]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="UserTeams_In">[UserTeams]</InArgument>
+                        <InArgument x:TypeArguments="x:Int32" x:Key="WorkHours_In">[WorkHours]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="EmployeeMail_In">[EmployeeMail]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="HolidaysHR_User_In">[HolidaysHR_User]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="HolidaysHR_Password_In">[HolidaysHR_Password]</InArgument>
+                      </ui:InvokeWorkflowFile.Arguments>
+                    </ui:InvokeWorkflowFile>
+                  </TryCatch.Try>
+                  <TryCatch.Catches>
+                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="403.2,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ActivityAction x:TypeArguments="s:Exception">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                        </ActivityAction.Argument>
+                      </ActivityAction>
+                    </Catch>
+                  </TryCatch.Catches>
+                </TryCatch>
+              </State.Entry>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <av:Point x:Key="ShapeLocation">160.4,327.2</av:Point>
+                  <av:Size x:Key="ShapeSize">239.2,105.6</av:Size>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  <x:Double x:Key="StateContainerWidth">205.60000000000002</x:Double>
+                  <x:Double x:Key="StateContainerHeight">25</x:Double>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <State.Transitions>
+                <Transition DisplayName="T2" sap2010:WorkflowViewState.IdRef="Transition_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <av:PointCollection x:Key="ConnectorLocation">280,432.8 280,487.2</av:PointCollection>
+                      <x:Int32 x:Key="SrcConnectionPointIndex">39</x:Int32>
+                      <x:Int32 x:Key="DestConnectionPointIndex">38</x:Int32>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Transition.To>
+                    <State x:Name="__ReferenceID1" sap2010:Annotation.AnnotationText="Send e-mails to the other parties and to the new Employee&#xA;" DisplayName="Final State" sap:VirtualizedContainerService.HintSize="501.6,1565.6" sap2010:WorkflowViewState.IdRef="State_1" IsFinal="True">
+                      <State.Entry>
+                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="456.8,1408" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                          <TryCatch.Try>
+                            <Sequence sap:VirtualizedContainerService.HintSize="420,1176.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Sequence_SendEmail(Welcome to Mindit) workflow" sap:VirtualizedContainerService.HintSize="378.4,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="RobotSteps\Sequence_SendEmail(Welcome to Mindit).xaml">
+                                <ui:InvokeWorkflowFile.Arguments>
+                                  <InArgument x:TypeArguments="x:String" x:Key="EmployeeMail_In">[EmployeeMail]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="Name_In">[Name]</InArgument>
+                                </ui:InvokeWorkflowFile.Arguments>
+                              </ui:InvokeWorkflowFile>
+                              <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Sequence_SendEmail(P6) workflow" sap:VirtualizedContainerService.HintSize="378.4,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="RobotSteps\Sequence_SendEmail(P6).xaml">
+                                <ui:InvokeWorkflowFile.Arguments>
+                                  <InArgument x:TypeArguments="x:String" x:Key="Name_In">[Name]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="EmployeeMail_In">[EmployeeMail]</InArgument>
+                                </ui:InvokeWorkflowFile.Arguments>
+                              </ui:InvokeWorkflowFile>
+                              <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke SequenceP7 workflow" sap:VirtualizedContainerService.HintSize="378.4,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="RobotSteps\SequenceP7.xaml">
+                                <ui:InvokeWorkflowFile.Arguments>
+                                  <InArgument x:TypeArguments="x:String" x:Key="Name_In">[Name]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="BuddyName_In">[BuddyName]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="ManagerName_In">[ManagerName]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="EmployeeMail_In">[EmployeeMail]</InArgument>
+                                </ui:InvokeWorkflowFile.Arguments>
+                              </ui:InvokeWorkflowFile>
+                              <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Sequence_SendEmail(Guidelines) workflow" sap:VirtualizedContainerService.HintSize="378.4,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="RobotSteps\Sequence_SendEmail(Guidelines).xaml">
+                                <ui:InvokeWorkflowFile.Arguments>
+                                  <InArgument x:TypeArguments="x:String" x:Key="Name_In">[Name]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="EmployeeMail_In">[EmployeeMail]</InArgument>
+                                </ui:InvokeWorkflowFile.Arguments>
+                              </ui:InvokeWorkflowFile>
+                              <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke SequenceP13 workflow" sap:VirtualizedContainerService.HintSize="378.4,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="RobotSteps\SequenceP13.xaml">
+                                <ui:InvokeWorkflowFile.Arguments>
+                                  <InArgument x:TypeArguments="x:String" x:Key="Name_In">[Name]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="PasswordMail_In">[PasswordMail]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="PasswordLaptop_In">[PasswordLaptop]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="EmployeeMail_In">[EmployeeMail]</InArgument>
+                                </ui:InvokeWorkflowFile.Arguments>
+                              </ui:InvokeWorkflowFile>
+                              <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke SequenceP9 workflow" sap:VirtualizedContainerService.HintSize="378.4,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="RobotSteps\SequenceP9.xaml">
+                                <ui:InvokeWorkflowFile.Arguments>
+                                  <InArgument x:TypeArguments="x:String" x:Key="BirthDate_In">[BirthDate]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="HireDate_In">[HireDate]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="Position_In">[Position]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="Location_In">[Location]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="EmployeeMail_In">[EmployeeMail]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="Name_In">[Name]</InArgument>
+                                </ui:InvokeWorkflowFile.Arguments>
+                              </ui:InvokeWorkflowFile>
+                              <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Sequence_SendEmail(Medicover) workflow" sap:VirtualizedContainerService.HintSize="378.4,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="RobotSteps\Sequence_SendEmail(Medicover).xaml">
+                                <ui:InvokeWorkflowFile.Arguments>
+                                  <InArgument x:TypeArguments="x:String" x:Key="Name_In">[Name]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="Gender_In">[Gender]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="HireDate_In">[HireDate]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="Position_In">[Position]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="PNC_In">[PNC]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="PhoneNumber_In">[PhoneNumber]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="Location_In">[Location]</InArgument>
+                                </ui:InvokeWorkflowFile.Arguments>
+                              </ui:InvokeWorkflowFile>
+                              <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Sequence_SendEmail(Medicover1) workflow" sap:VirtualizedContainerService.HintSize="378.4,88" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="RobotSteps\Sequence_SendEmail(Medicover1).xaml">
+                                <ui:InvokeWorkflowFile.Arguments>
+                                  <InArgument x:TypeArguments="x:String" x:Key="PhoneNumber_In">[PhoneNumber]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="Name_In">[Name]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="Position_In">[Position]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="PNC_In">[PNC]</InArgument>
+                                </ui:InvokeWorkflowFile.Arguments>
+                              </ui:InvokeWorkflowFile>
+                              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="378.4,60" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Va multumim! 😊&quot;]" />
+                            </Sequence>
+                          </TryCatch.Try>
+                          <TryCatch.Catches>
+                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="423.2,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ActivityAction x:TypeArguments="s:Exception">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                </ActivityAction.Argument>
+                              </ActivityAction>
+                            </Catch>
+                          </TryCatch.Catches>
+                        </TryCatch>
+                      </State.Entry>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <av:Point x:Key="ShapeLocation">82,487.2</av:Point>
+                          <av:Size x:Key="ShapeSize">396,105.6</av:Size>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          <x:Double x:Key="StateContainerWidth">362.40000000000009</x:Double>
+                          <x:Double x:Key="StateContainerHeight">25</x:Double>
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </State>
+                  </Transition.To>
+                </Transition>
+              </State.Transitions>
+            </State>
+          </Transition.To>
+        </Transition>
+      </State.Transitions>
+    </State>
+    <x:Reference>__ReferenceID0</x:Reference>
+    <x:Reference>__ReferenceID1</x:Reference>
+    <StateMachine.Variables>
+      <Variable x:TypeArguments="x:String" Name="Scutit" />
+      <Variable x:TypeArguments="x:String" Name="Buletin" />
+      <Variable x:TypeArguments="x:String" Name="Name" />
+      <Variable x:TypeArguments="x:String" Name="HireDate" />
+      <Variable x:TypeArguments="x:String" Name="Position" />
+      <Variable x:TypeArguments="x:String" Name="NetSalary" />
+      <Variable x:TypeArguments="x:Int32" Name="WorkHours" />
+      <Variable x:TypeArguments="x:Int32" Name="VacationDays" />
+      <Variable x:TypeArguments="x:String" Name="Location" />
+      <Variable x:TypeArguments="x:String" Name="EmployeeMail" />
+      <Variable x:TypeArguments="x:String" Name="HolidaysHR_User" />
+      <Variable x:TypeArguments="x:String" Name="HolidaysHR_Password" />
+      <Variable x:TypeArguments="x:String" Name="BirthDate" />
+      <Variable x:TypeArguments="x:Boolean" Name="Manager" />
+      <Variable x:TypeArguments="x:Boolean" Name="Admin" />
+      <Variable x:TypeArguments="x:String" Name="ManagerName" />
+      <Variable x:TypeArguments="x:String" Name="UserTeams" />
+      <Variable x:TypeArguments="x:String" Name="Gender" />
+      <Variable x:TypeArguments="x:String" Name="PNC" />
+      <Variable x:TypeArguments="x:String" Name="PhoneNumber" />
+      <Variable x:TypeArguments="x:String" Name="BuddyName" />
+      <Variable x:TypeArguments="x:String" Name="PasswordMail" />
+      <Variable x:TypeArguments="x:String" Name="PasswordLaptop" />
+    </StateMachine.Variables>
+  </StateMachine>
+</Activity>

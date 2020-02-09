@@ -1,0 +1,12 @@
+Buna,
+
+Mai jos gasesti datele tipului nou pentru creare user:
+
+Nume Complet: {0}
+
+Multumesc!
+
+O zi buna!
+
+--------------------------------------------------------------------------------------
+Note: Acesta este un mesaj automat trimis de catre un robot software.

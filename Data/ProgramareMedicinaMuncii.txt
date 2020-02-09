@@ -1,0 +1,7 @@
+<p>Buna ziua,</p>
+<p>&nbsp;</p>
+<p>Va rog sa ma ajutati cu programari la medicina muncii pentru:</p>
+<p>{0} &ndash; incepand de maine, oricand</p>
+<p><br />Atasate aveti fisele de risc.</p>
+<p>&nbsp;</p>
+<p>O zi frumoasa,<br />MindIT Team</p>

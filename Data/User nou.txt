@@ -1,0 +1,9 @@
+<div style="box-sizing: border-box; font-family: 'Segoe UI', 'Helvetica Neue', 'Apple Color Emoji', 'Segoe UI Emoji', Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;">
+<p><span style="font-size: 11pt;"><span style="font-family: Calibri,sans-serif;"><span style="font-size: 10.0pt;"><span style="font-family: 'Arial',sans-serif;">Buna,</span></span></span></span></p>
+<p><span style="font-size: 11pt;"><span style="font-family: Calibri,sans-serif;">&nbsp;</span></span></p>
+<p><span style="font-size: 11pt;"><span style="font-family: Calibri,sans-serif;"><span style="font-size: 10.0pt;"><span style="font-family: 'Arial',sans-serif;">Va rog sa ma ajutati cu un user pentru coleg(ă): <u> <a style="color: #6888c9;" tabindex="-1" title="mailto:andrei.postoiu@mindit.io" href="mailto:andrei.postoiu@mindit.io" target="_blank" rel="noreferrer noopener">andrei.postoiu@mindit.io</a> </u></span></span></span></span></p>
+<p><span style="font-size: 11pt;"><span style="font-family: Calibri,sans-serif;">&nbsp;</span></span></p>
+<p><span style="font-size: 11pt;"><span style="font-family: Calibri,sans-serif;"><span style="font-size: 10.0pt;"><span style="font-family: 'Arial',sans-serif;">Licenta premium si acces pe outlook la grupul <u> <a style="color: #6888c9;" tabindex="-1" title="mailto:all@mindit.io" href="mailto:all@mindit.io" target="_blank" rel="noreferrer noopener">all@mindit.io</a> </u> si pe Atlassian pe mindit si jira-developers.</span></span></span></span></p>
+<p>Zi faina,<br />MindIT Team</p>
+<p>This mail was sent by a robot!</p>
+</div>

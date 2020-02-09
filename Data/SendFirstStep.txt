@@ -1,0 +1,26 @@
+<p>Buna,</p>
+<p>
+  <br>
+</p>
+<p>Mai jos poti gasi datele angajatului:</p>
+<p>
+  <br>
+</p>
+<p>Nume Complet: {0}</p>
+<p>Data inceput: {1}</p>
+<p>Functie : {2}&nbsp;</p>
+<p>Salariu Net: {3}&nbsp;</p>
+<p>Program full time ore: {4}&nbsp;</p>
+<p>Concediu odihna : {5}</p>
+<p>Punct de lucru: {6}</p>
+<p>Scutit: {7}</p>
+<p>
+  <br>
+</p>
+<p>Multumesc!</p>
+<p>
+  <br>
+</p>
+<p>
+  <br>
+</p>
