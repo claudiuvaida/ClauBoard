@@ -15,7 +15,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1752.8,4823.2</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1752.8,4970.4</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>_3_CreateUserHolidays_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="21">
@@ -65,19 +65,19 @@
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="_3_CreateUserHolidays" sap:VirtualizedContainerService.HintSize="1732.8,4763.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="_3_CreateUserHolidays" sap:VirtualizedContainerService.HintSize="1732.8,4910.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="1691.2,4670.4" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="http://holidays.mindit.ro">
+    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="1691.2,4817.6" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="http://holidays.mindit.ro">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1657.6,4570.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1657.6,4717.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="Time" />
             </Sequence.Variables>
@@ -474,6 +474,18 @@
                 </ui:Target>
               </ui:Click.Target>
             </ui:Click>
+            <ui:UiElementExists Exists="{x:Null}" DisplayName="Element Exists 'DIV  messageAdd'" sap:VirtualizedContainerService.HintSize="1616,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+              <ui:UiElementExists.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="24339c72205d19c92410a6a9cc67a02e" Selector="&lt;webctrl id='messageAdd' tag='DIV' innertext='Employee inserted' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:UiElementExists.Target>
+            </ui:UiElementExists>
             <ui:CloseWindow Selector="{x:Null}" TimeoutMS="{x:Null}" UseWindow="{x:Null}" DisplayName="Close Window 'chrome.exe User'" sap:VirtualizedContainerService.HintSize="1616,107.2" sap2010:WorkflowViewState.IdRef="CloseWindow_1" InformativeScreenshot="bd01ed5c90373335167f2e5161d80919" WaitForReady="INTERACTIVE" />
           </Sequence>
         </ActivityAction>

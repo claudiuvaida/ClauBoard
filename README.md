@@ -5,12 +5,28 @@ Hello!
 My name is ClauBoard and i am here to help you regarding the on-board process. 
 I am very efficient since i am built in UiPath but i am not a complete robot yet. I am very sure that you can help me with some updates when you have the right time.
 Note: At this moment i can only do the MindIT On-Boarding process and i plan in the near future that i can be more of a model in order to be adapted in each company.
+Note2: Before the first run, please update the robot with the addresses inside each flow at To field (Accountancy's mail and the other addresses. Please update all flows that include a send mail or verify them)
+
 
 # Prerequisites
 
 I will try to keep it simple in order to point out only the important things:
 1. I need to have the e-mail's employee activated before i start the process because i will send him some e-mails (And his Windows must be already active and configured);
-2. The Profile ID picture must be placed inside the robot's directory (Ex: cbbb74d9-9597-4632-ac29-ed6801a01c87.jfif) and the full name must be inserted inside the Excel parameters (Data\Angajat.xlsx - Poza Buletin).
+2. The Profile ID picture must be placed inside the robot's directory (Ex: cbbb74d9-9597-4632-ac29-ed6801a01c87.jfif) and the full name must be inserted inside the Excel parameters (Data\Angajat.xlsx - Poza Buletin);
+3. The "HR" Username and Password from the excel file must have Admin rights on the platform (holidays.mindit.ro).
+
+
+# How to use me:
+
+Please find below the steps:
+1. Install UiPath Studio Community Edition;
+2. Download the project;
+3. Unzip the archive;
+4. Open UiPath -> Open a local project -> Locate the project.json where the archive was unzipped
+5. Open the Excel file where you will add the parameters (Project_Path\Data\Angajat.xlsx)
+6. Update the Excel with the relevant information,save and close.
+7. Run the process
+
 
 # Future Developments
 
