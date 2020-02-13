@@ -36,6 +36,7 @@ Okay, i will list all my future improvements that will be implemented and i will
 2. Add actions when an exception is triggered inside the States -> Entry -> Try/Catch -> Catch;
 - For the moment, we will add a send outlook mail with the exception to the HR's mail;
 3. Organize, Re-name and add anotations in order to better understand the whole project since we don't have any technical documentation;
+4. Remove data from xls after the operation is over;
 
 Having in mind that we've said the top priority things, we will now just list the other stuff:
 1. Make a circular flow with Statuses/Indicators that are updated depending on the states in order to optimize the flow (If we are making this, we don't need anymore studio installed OR to connect to the remote machine since we will only just copy paste the Excel File into a location and the whole process will be automatically triggered at each 10/15 minutes)
